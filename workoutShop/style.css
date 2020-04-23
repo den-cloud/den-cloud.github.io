@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("C:\Users\Admin\Desktop\workoutShop\main\font\Roboto-Light.ttf") format("trueType");
+  font-style: normal;
+  font-size: normal;
+}
+/*хедер*/
+.header {
+  display: flex;
+  margin: -10px -10px 0 -10px;
+  height: 150px;
+  background: linear-gradient(to bottom, #000 40%, #e28623);
+  filter: hue-rotate(0deg);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.img1 {
+  background: url("C:\\Users\\Admin\\Desktop\\workoutShop\\main\\img\\arnold.png") no-repeat -50px -20px;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  background: url("img\\logo.png") no-repeat;
+  height: 510px;
+  width: 600px;
+  transform: scale(0.35);
+  top: -190px;
+  left: -230px;
+}
+
+div:hover.header {
+  filter: hue-rotate(-5deg);
+}
+
+.logo-text {
+  border-right: 2px solid #fff;
+  padding-left: 20%;
+  flex-grow: 1;
+}
+
+.nav {
+  flex-grow: 10;
+}
+
+ul.nav-items {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0px;
+}
+
+ul.nav-items li {
+  position: relative;
+  font-family: "Roboto";
+  font-size: 20px;
+  flex: auto;
+}
+
+ul.nav-items li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-items a::after,
+.nav-items a::before {
+  z-index: 5;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  content: "";
+  left: -20px;
+  top: 12px;
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.nav-items a::before {
+  left: 80px;
+}
+
+.nav-items a:hover::after,
+.nav-items a:hover::before {
+  opacity: 1;
+}
+
+/*main content*/
+.main-page {
+  color: #fff;
+  margin: 0 -10px 0 -10px;
+  z-index: 1;
+  font-family: "Roboto";
+  font-size: 15px;
+  display: flex;
+  filter: hue-rotate(0deg);
+  transition: filter 1s;
+}
+
+.main-page:hover {
+  filter: hue-rotate(-5deg);
+}
+
+.sidebar {
+  flex-grow: 1;
+  min-width: 340px;
+  height: 500px;
+  border-right: 2px solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #171616;
+}
+
+.advert {
+  flex-grow: 1;
+  border-bottom: 1px dashed #000;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.advert::before {
+  content:"Реклама";
+}
+
+.content {
+  flex-grow: 1;
+  background: #171616 url("img\\background-main.png") no-repeat 0 -150px;
+  width: 1200px;
+  padding: 20px;
+}
+
+.article  h3{
+  margin-left: 60px;
+  border-bottom: 1px solid #000;
+}
+
+.article-content {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.footer {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  font-family: "Roboto";
+  background: #171616;
+  color: grey;
+  font-size: 10px;
+  width: inherit;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.roots {
+  position: absolute;
+  height: 10px;
+  left: 50%;
+  bottom: 0px;
+}
